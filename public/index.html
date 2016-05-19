@@ -6,7 +6,9 @@
   <body ng-app="quizApp">
 
     <section ng-controller="quizCtrl">
-
+      <div ng-repeat-start="question in randomizedQuiz" class="question">{{$index+1}}. {{question.name}}</div>
+      <div ng-repeat="choice in question.choices" class="multipleChoice"><input type=radio name=check>{{choice}}</div>
+      <div ng-repeat-end class="end"></div>
     </section>
 
     <script src="./vendor/angular/angular.min.js"></script>
