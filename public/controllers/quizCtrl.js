@@ -1,3 +1,4 @@
+(function() {
 'use strict';
 
   const app = angular.module('quizApp', []);
@@ -46,3 +47,4 @@
     $scope.randomizedQuiz = randomizedQuiz;
 
   }]);
+})();
